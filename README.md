@@ -17,7 +17,6 @@ Adverts can slow and even break functional tests. If you run your functional tes
   ...
 }
 ```
-
 Where ```Q3Iy....AAAA=``` is the base64 encoded crx file you want to install. Unfortunately Adblock-Plus is around 600KB when encoded and not something you really want to include in a json file.
 
 When using the excellent [Nightwatch.js](http://nightwatchjs.org/) you can define configuration in ```nightwatch.conf.js``` instead of json.
@@ -38,7 +37,7 @@ module.exports = {
   }
   ...
 }
-
+```
 # Modifications
 
 AdBlock-Plus opens a new tab on first run. WebDriver tests typically start with a fresh profile for each run so we've disabled first run behaviour by setting suppress_first_run_page to true.

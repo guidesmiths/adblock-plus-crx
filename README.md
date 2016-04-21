@@ -39,7 +39,6 @@ module.exports = {
 }
 ```
 # Modifications
-
-AdBlock-Plus opens a new tab on first run. WebDriver tests typically start with a fresh profile for each run so we've disabled first run behaviour by setting ```suppress_first_run_page``` to true and recreating the crx.
+AdBlock-Plus opens a new tab on first run and since WebDriver tests typically start with a fresh profile each run gets more than a little annoying.  We've disabled first run behaviour by setting ```suppress_first_run_page``` to true and recreating the crx.
 
 

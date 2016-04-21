@@ -18,7 +18,7 @@ Adverts can slow and even break functional tests. If you run your functional tes
 }
 ```
 
-Where ```Q3Iy....AAAA=``` is the base64 encoded crx file you want to install. Unfortunately Adblock-Plus is over 600KB when encoded and not something you really want to include in a json file.
+Where ```Q3Iy....AAAA=``` is the base64 encoded crx file you want to install. Unfortunately Adblock-Plus is around 600KB when encoded and not something you really want to include in a json file.
 
 When using the excellent [Nightwatch.js](http://nightwatchjs.org/) you can define configuration in ```nightwatch.conf.js``` instead of json.
 

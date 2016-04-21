@@ -2,10 +2,9 @@
 
 Adverts can slow and even break functional tests. If you run your functional tests using ChromeDriver you can install extensions like AdBlock-Plus as follows...
 
-```json
+```
 {
-
-
+  ...
   "desiredCapabilities": {
     "javascriptEnabled": true,
     "acceptSslCerts": true,
@@ -15,8 +14,7 @@ Adverts can slow and even break functional tests. If you run your functional tes
       "extensions": [ "Q3Iy....AAAA=" ]
     }
   }
-
-
+  ...
 }
 ```
 
@@ -24,12 +22,11 @@ Where ```Q3Iy....AAAA=``` is the base64 encoded crx file you want to install. Un
 
 When using the excellent [Nightwatch.js](http://nightwatchjs.org/) you can define configuration in ```nightwatch.conf.js``` instead of json.
 
-```js
+```
 var adBlockPlus = require('adblock-plus-crx')
 
 module.exports = {
-
-
+  ...
   "desiredCapabilities": {
     "javascriptEnabled": true,
     "acceptSslCerts": true,
@@ -39,8 +36,7 @@ module.exports = {
       "extensions": [ adBlockPlus.base64() ]
     }
   }
-
-
+  ...
 }
 
 # Modifications

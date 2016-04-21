@@ -1,4 +1,3 @@
-var debug = require('debug')('adblock-plus-crx')
 var fs = require('fs')
 var path = require('path')
 var filename = 'Adblock-Plus_v1.11.crx'

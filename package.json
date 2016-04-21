@@ -20,11 +20,6 @@
   "devDependencies": {
     "mocha": "^2.4.5"
   },
-  "dependencies": {
-    "debug": "^2.2.0",
-    "tar-stream": "^1.5.2",
-    "zip-stream": "^1.0.0"
-  },
   "directories": {
     "test": "tests"
   },

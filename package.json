@@ -1,0 +1,39 @@
+{
+  "name": "adblock-plus-crx",
+  "version": "1.11.0",
+  "description": "Adblock-Plus crx base64 encoded binary for chromedriver",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive tests/*.tests.js"
+  },
+  "keywords": [
+    "Adblock-Plus",
+    "Chrome",
+    "ChromeDriver",
+    "WebDrvier",
+    "Nightwatch",
+    "Extension",
+    "Base64"
+  ],
+  "author": "Stephen Cresswell",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "tar-stream": "^1.5.2",
+    "zip-stream": "^1.0.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guidesmiths/adblock-plus-crx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/guidesmiths/adblock-plus-crx/issues"
+  },
+  "homepage": "https://github.com/guidesmiths/adblock-plus-crx#readme"
+}

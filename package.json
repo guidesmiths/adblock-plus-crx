@@ -16,7 +16,7 @@
     "Base64"
   ],
   "author": "Stephen Cresswell",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "devDependencies": {
     "mocha": "^2.4.5"
   },

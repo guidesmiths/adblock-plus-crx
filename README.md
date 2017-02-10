@@ -45,13 +45,13 @@ AdBlock-Plus opens a new tab on first run and since WebDriver tests typically st
 1. Use a clean directory
     
     ```
-mkdir ~/Downloads/adblockplus
-cd ~/Downloads/adblockplus
+mkdir -p ~/Downloads/Adblock-Plus/1.12.4
+cd ~/Downloads/Adblock-Plus/1.12.4
 ```
 1. Download the crx file from adblockplus.org 
     
     ```bash
-curl https://downloads.adblockplus.org/adblockpluschrome-1.12.4.crx -O Adblock-Plus_v1.12.4.crx
+curl https://downloads.adblockplus.org/adblockpluschrome-1.12.4.crx -o Adblock-Plus_v1.12.4.crx
 ```
 1. Unzip the crx
     
@@ -61,15 +61,10 @@ unzip Adblock-Plus_v1.12.4.crx
 1. Make your modifications
 
     ```
-sed -i '' -e 's/defaults.suppress_first_run_page = false;/defaults.suppress_first_run_page = true;/ lib/adblockplus.js 
+sed -i '' -e 's/defaults.suppress_first_run_page = false;/defaults.suppress_first_run_page = true;/' lib/adblockplus.js
 ```
-1. Update the crx
+1. Rezip the crx (-u --update doesn't work for me)
     
     ```
-zip Adblock-Plus_v1.12.4.crx . -r -u
-```
-1. Base64 encode the zip
-    
-    ```
-base64 --in Adblock-Plus_v1.12.4.crx --out Adblock-Plus_v1.12.4.crx
+zip Adblock-Plus_v1.12.4.crx . -r
 ```

@@ -14,6 +14,7 @@ bash << HERE
     curl --fail --silent https://downloads.adblockplus.org/adblockpluschrome-$VERSION.crx -o Adblock-Plus_v$VERSION.crx
     unzip -q Adblock-Plus_v$VERSION.crx
 
+    # Modifications go here...
     sed -i '' -e 's/defaults.suppress_first_run_page = false;/defaults.suppress_first_run_page = true;/' lib/adblockplus.js
 
     zip Adblock-Plus_v$VERSION.crx . -r -m -q

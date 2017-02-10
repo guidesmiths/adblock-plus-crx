@@ -43,5 +43,7 @@ AdBlock-Plus opens a new tab on first run and since WebDriver tests typically st
 
 # How do make your own crx (instructions for OSX)
 1. For this project
-2. Update the adblock-plus-crx version in package.json
-3. Run ```./scripts/update.sh``` from the forks route directory
+1. Update the adblock-plus-crx version in package.json
+1. Add modifications to ```./scripts/update.sh```
+1. Run ```./scripts/update.sh``` from forks root directory (the one containing package.json)
+1. Commit your changes but don't submit a pull request (I won't trust a generated crx)

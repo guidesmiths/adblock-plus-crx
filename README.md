@@ -51,12 +51,12 @@ cd ~/Downloads/adblockplus
 1. Download the crx file from adblockplus.org 
     
     ```bash
-curl https://downloads.adblockplus.org/adblockpluschrome-1.12.4.crx -O 
+curl https://downloads.adblockplus.org/adblockpluschrome-1.12.4.crx -O Adblock-Plus_v1.12.4.crx
 ```
 1. Unzip the crx
     
     ```
-unzip adblockpluschrome-1.12.4.crx
+unzip Adblock-Plus_v1.12.4.crx
 ```
 1. Make your modifications
 
@@ -66,10 +66,10 @@ sed -i '' -e 's/defaults.suppress_first_run_page = false;/defaults.suppress_firs
 1. Update the crx
     
     ```
-zip adblockpluschrome-1.12.4-custom.crx.zip . -r -u
+zip Adblock-Plus_v1.12.4.crx . -r -u
 ```
 1. Base64 encode the zip
     
     ```
-base64 --in adblockpluschrome-1.12.4-custom.crx.zip --out adblockpluschrome-1.12.4-custom.base64
+base64 --in Adblock-Plus_v1.12.4.crx --out Adblock-Plus_v1.12.4.crx
 ```

@@ -1,6 +1,7 @@
 var fs = require('fs')
 var path = require('path')
-var filename = 'Adblock-Plus_v1.11.crx'
+var version = require('./package.json')['adblock-plus-crx'].version
+var filename = 'Adblock-Plus_v' + version + '.crx'
 
 module.exports = {
     path: path.join(__dirname, 'bin', filename),

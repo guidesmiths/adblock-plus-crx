@@ -6,6 +6,9 @@
   "scripts": {
     "test": "mocha --recursive tests/*.tests.js"
   },
+  "adblock-plus-crx": {
+    "version": "1.12.4"
+  },
   "keywords": [
     "Adblock-Plus",
     "Chrome",
@@ -30,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/guidesmiths/adblock-plus-crx/issues"
   },
-  "homepage": "https://github.com/guidesmiths/adblock-plus-crx#readme"
+  "homepage": "https://github.com/guidesmiths/adblock-plus-crx#readme",
+  "dependencies": {
+    "mocha": "^3.2.0"
+  }
 }

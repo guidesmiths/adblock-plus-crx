@@ -42,29 +42,6 @@ module.exports = {
 AdBlock-Plus opens a new tab on first run and since WebDriver tests typically start with a fresh profile each run gets more than a little annoying.  We've disabled first run behaviour by setting ```suppress_first_run_page``` to true and recreating the crx.
 
 # How do make your own crx (instructions for OSX)
-1. Use a clean directory
-    
-    ```
-mkdir -p ~/Downloads/Adblock-Plus/1.12.4
-cd ~/Downloads/Adblock-Plus/1.12.4
-```
-1. Download the crx file from adblockplus.org 
-    
-    ```bash
-curl https://downloads.adblockplus.org/adblockpluschrome-1.12.4.crx -o Adblock-Plus_v1.12.4.crx
-```
-1. Unzip the crx
-    
-    ```
-unzip Adblock-Plus_v1.12.4.crx
-```
-1. Make your modifications
-
-    ```
-sed -i '' -e 's/defaults.suppress_first_run_page = false;/defaults.suppress_first_run_page = true;/' lib/adblockplus.js
-```
-1. Rezip the crx (-u --update doesn't work for me)
-    
-    ```
-zip Adblock-Plus_v1.12.4.crx . -r
-```
+1. For this project
+2. Update the adblock-plus-crx version in package.json
+3. Run ```./scripts/update.sh``` from the forks route directory

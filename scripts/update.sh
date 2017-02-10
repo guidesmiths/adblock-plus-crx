@@ -1,6 +1,11 @@
 #!/bin/bash
 set -e
 
+if [ ! -f 'package.json' ]; then
+    echo "Error cannot find package.json"
+    exit 1
+fi
+
 VERSION=$(node -e 'process.stdout.write(require(process.cwd() + "/package.json")["adblock-plus-crx"].version)')
 
 bash << HERE

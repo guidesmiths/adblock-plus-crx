@@ -45,8 +45,8 @@ AdBlock-Plus opens a new tab on first run and since WebDriver tests typically st
 1. Fork this project
 1. Update the adblock-plus-crx version in package.json
 1. Add modifications to ```./scripts/update.sh```
-1. Run ```./scripts/update.sh``` from forks root directory (the one containing package.json)
-1. Commit your changes / publish to your own repo.
+1. Run ```./scripts/update.sh``` from forks root directory - i.e. the one containing package.json
+1. Commit your changes and publish to npm or a private repo.
 
 # Pull Requests
 I will consider pull requests for adblock-plus version updates and generally useful modifications to the crx config. The later should be done by amending ```scripts/update.sh```. I cannot accept changes to the crx file itself.

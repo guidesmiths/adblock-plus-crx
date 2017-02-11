@@ -50,4 +50,4 @@ AdBlock-Plus opens a new tab on first run and since WebDriver tests typically st
 1. Commit your changes and publish to npm or a private repo.
 
 # Pull Requests
-If you don't want to publish an alternative version of this package, I will consider pull requests for adblock-plus version updates and generally useful modifications, however the later should be done by amending ```scripts/update.sh```. I cannot accept changes to the crx file itself.
+If you don't want to publish an alternative version of this package, I will consider pull requests for adblock-plus version updates and generally useful modifications, however the later should be done by amending ```./scripts/update.sh```. I cannot accept changes to the crx file itself.

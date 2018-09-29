@@ -1,6 +1,6 @@
 {
   "name": "adblock-plus-crx",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Adblock-Plus crx base64 encoded binary for chromedriver",
   "main": "index.js",
   "scripts": {

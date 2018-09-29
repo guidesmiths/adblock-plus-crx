@@ -21,7 +21,7 @@
   "author": "Stephen Cresswell",
   "license": "GPL-3.0",
   "devDependencies": {
-    "mocha": "^2.4.5"
+    "mocha": "^5.2.0"
   },
   "directories": {
     "test": "tests"
@@ -34,7 +34,5 @@
     "url": "https://github.com/guidesmiths/adblock-plus-crx/issues"
   },
   "homepage": "https://github.com/guidesmiths/adblock-plus-crx#readme",
-  "dependencies": {
-    "mocha": "^3.2.0"
-  }
+  "dependencies": {}
 }

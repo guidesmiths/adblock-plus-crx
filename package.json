@@ -21,6 +21,9 @@
   "author": "Stephen Cresswell",
   "license": "GPL-3.0",
   "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
+    "husky": "^7.0.4",
     "mocha": "^5.2.0"
   },
   "directories": {
@@ -33,6 +36,5 @@
   "bugs": {
     "url": "https://github.com/guidesmiths/adblock-plus-crx/issues"
   },
-  "homepage": "https://github.com/guidesmiths/adblock-plus-crx#readme",
-  "dependencies": {}
+  "homepage": "https://github.com/guidesmiths/adblock-plus-crx#readme"
 }
